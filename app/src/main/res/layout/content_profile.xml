@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.grebeteam.agrecovery.activities.ProfileActivity"
+    tools:showIn="@layout/app_bar_profile"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@drawable/border_background_primary_color">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_user_image"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_width="2dp"
+            android:paddingRight="8dp"
+            app:civ_border_color="@color/colorAccent"
+            android:layout_weight="4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/border_background_primary_dark_color">
+            <TextView
+                android:id="@+id/profile_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Sample name"/>
+            <TextView
+                android:id="@+id/profile_user_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:text="Simple user/vendor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:background="@drawable/border_background_primary_color"
+        android:divider="@color/colorAccent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TableRow
+                android:padding="10dp"
+                android:background="@drawable/low_line_border">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Indirizzo:"/>
+                <TextView
+                    android:id="@+id/profile_user_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"/>
+            </TableRow>
+
+            <TableRow
+                android:padding="10dp"
+                android:background="@drawable/low_line_border">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Telefono:"/>
+                <TextView
+                    android:id="@+id/profile_user_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"/>
+            </TableRow>
+
+            <TableRow
+                android:padding="10dp"
+                android:background="@drawable/low_line_border">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Email:"/>
+                <TextView
+                    android:id="@+id/profile_user_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/profile_user_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_margin"
+            android:text="Here goes the description."/>
+
+    </LinearLayout>
+
+</LinearLayout>

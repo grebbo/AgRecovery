@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:baselineAligned="false"
+    android:background="@drawable/border_background_primary_color">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/vendor_profile_image"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:civ_border_width="2dp"
+        android:paddingRight="8dp"
+        app:civ_border_color="@color/colorAccent"
+        android:layout_weight="4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/border_background_primary_dark_color"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/vendor_name"
+            android:text="Baxeico S.r.l Inc."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/vendor_address"
+            android:text="Monopoli, Via della Vittoria, 4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
